@@ -88,12 +88,13 @@
                                             <frame key="frameInset" width="375" height="64"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="me" translatesAutoresizingMaskIntoConstraints="NO" id="FOJ-n9-RWS">
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cLn-Ds-DpJ" customClass="ChatBackground" customModule="MyChat" customModuleProvider="target">
+                                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                                     <constraints>
-                                                        <constraint firstAttribute="height" constant="50" id="0pE-LW-aEn"/>
-                                                        <constraint firstAttribute="width" constant="50" id="wdL-kT-57k"/>
+                                                        <constraint firstAttribute="height" constant="20" id="gTB-o1-TuL"/>
+                                                        <constraint firstAttribute="width" constant="20" id="tJM-sQ-fE6"/>
                                                     </constraints>
-                                                </imageView>
+                                                </view>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="57B-tm-wT0">
                                                     <subviews>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1id-79-P8z">
@@ -112,13 +113,12 @@
                                                         <constraint firstItem="WbQ-yw-oW9" firstAttribute="top" secondItem="1id-79-P8z" secondAttribute="bottom" id="4jp-5U-QX9"/>
                                                     </constraints>
                                                 </view>
-                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cLn-Ds-DpJ">
-                                                    <color key="backgroundColor" red="0.20000000000000001" green="0.59999999999999998" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="me" translatesAutoresizingMaskIntoConstraints="NO" id="FOJ-n9-RWS">
                                                     <constraints>
-                                                        <constraint firstAttribute="height" constant="20" id="gTB-o1-TuL"/>
-                                                        <constraint firstAttribute="width" constant="20" id="tJM-sQ-fE6"/>
+                                                        <constraint firstAttribute="height" constant="50" id="0pE-LW-aEn"/>
+                                                        <constraint firstAttribute="width" constant="50" id="wdL-kT-57k"/>
                                                     </constraints>
-                                                </view>
+                                                </imageView>
                                             </subviews>
                                             <constraints>
                                                 <constraint firstAttribute="trailingMargin" secondItem="1id-79-P8z" secondAttribute="trailing" constant="70" id="96G-WJ-5T8"/>

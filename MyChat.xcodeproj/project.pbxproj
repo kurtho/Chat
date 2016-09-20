@@ -11,6 +11,7 @@
 		29DDAA201D8BFF8C0090DE21 /* ChatTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29DDAA1F1D8BFF8C0090DE21 /* ChatTableViewCell.swift */; };
 		29DDAA241D8C05D80090DE21 /* Function.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29DDAA231D8C05D80090DE21 /* Function.swift */; };
 		29DDAA261D8C23020090DE21 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29DDAA251D8C23020090DE21 /* ViewController.swift */; };
+		29DDAAA41D90D08E0090DE21 /* ChatTriangle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29DDAAA31D90D08E0090DE21 /* ChatTriangle.swift */; };
 		29F350B71D8BFC5E00C6FC8E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29F350B61D8BFC5E00C6FC8E /* AppDelegate.swift */; };
 		29F350BC1D8BFC5E00C6FC8E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 29F350BA1D8BFC5E00C6FC8E /* Main.storyboard */; };
 		29F350BE1D8BFC5E00C6FC8E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 29F350BD1D8BFC5E00C6FC8E /* Assets.xcassets */; };
@@ -22,6 +23,7 @@
 		29DDAA1F1D8BFF8C0090DE21 /* ChatTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatTableViewCell.swift; sourceTree = "<group>"; };
 		29DDAA231D8C05D80090DE21 /* Function.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Function.swift; sourceTree = "<group>"; };
 		29DDAA251D8C23020090DE21 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		29DDAAA31D90D08E0090DE21 /* ChatTriangle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatTriangle.swift; sourceTree = "<group>"; };
 		29F350B31D8BFC5E00C6FC8E /* MyChat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyChat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		29F350B61D8BFC5E00C6FC8E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		29F350BB1D8BFC5E00C6FC8E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -41,6 +43,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		29DDAAA51D90DB880090DE21 /* cell */ = {
+			isa = PBXGroup;
+			children = (
+				29DDAA1F1D8BFF8C0090DE21 /* ChatTableViewCell.swift */,
+			);
+			name = cell;
+			sourceTree = "<group>";
+		};
 		29F350AA1D8BFC5E00C6FC8E = {
 			isa = PBXGroup;
 			children = (
@@ -65,8 +75,9 @@
 				29DDAA251D8C23020090DE21 /* ViewController.swift */,
 				29F350BD1D8BFC5E00C6FC8E /* Assets.xcassets */,
 				29DDAA1D1D8BFD6F0090DE21 /* ChatViewController.swift */,
-				29DDAA1F1D8BFF8C0090DE21 /* ChatTableViewCell.swift */,
 				29DDAA231D8C05D80090DE21 /* Function.swift */,
+				29DDAAA51D90DB880090DE21 /* cell */,
+				29DDAAA31D90D08E0090DE21 /* ChatTriangle.swift */,
 				29F350BF1D8BFC5E00C6FC8E /* LaunchScreen.storyboard */,
 				29F350C21D8BFC5E00C6FC8E /* Info.plist */,
 			);
@@ -148,6 +159,7 @@
 				29DDAA261D8C23020090DE21 /* ViewController.swift in Sources */,
 				29DDAA201D8BFF8C0090DE21 /* ChatTableViewCell.swift in Sources */,
 				29DDAA1E1D8BFD6F0090DE21 /* ChatViewController.swift in Sources */,
+				29DDAAA41D90D08E0090DE21 /* ChatTriangle.swift in Sources */,
 				29F350B71D8BFC5E00C6FC8E /* AppDelegate.swift in Sources */,
 				29DDAA241D8C05D80090DE21 /* Function.swift in Sources */,
 			);
