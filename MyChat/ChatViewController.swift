@@ -11,6 +11,7 @@ import UIKit
 class ChatViewController: UIViewController {
     @IBOutlet weak var myTableView: UITableView!
 
+    @IBOutlet weak var chatView: UIView!
     @IBOutlet weak var myTextView: UITextView!
     var chatName = "Kurt"
     var chatContent = ["Hi", "Hello", "How are you","yoyo","make a row"]
@@ -37,6 +38,7 @@ class ChatViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         myTableView.estimatedRowHeight = 65
         myTableView.rowHeight = UITableViewAutomaticDimension
 
@@ -64,7 +66,7 @@ extension ChatViewController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = myTableView.dequeueReusableCell(withIdentifier: "myCell") as! ChatTableViewCell
-        
+        cell.chatview.layer.cornerRadius = 8
         cell.selectionStyle = UITableViewCellSelectionStyle.none
         cell.name.text = chatName
         cell.content.text = chatContent[indexPath.row]
