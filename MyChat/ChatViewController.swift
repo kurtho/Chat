@@ -65,12 +65,15 @@ extension ChatViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = myTableView.dequeueReusableCell(withIdentifier: "myCell") as! ChatTableViewCell
         
+        cell.selectionStyle = UITableViewCellSelectionStyle.none
         cell.name.text = chatName
         cell.content.text = chatContent[indexPath.row]
-        
-        
+    
         return cell
     }
+    
+    
+    
     
     func moveToLastMessage() {
         let move = NSIndexPath(row: chatContent.count - 1, section: 0)
