@@ -15,10 +15,11 @@ class ChatViewController: UIViewController {
     @IBOutlet weak var myTextView: UITextView!
     var chatName = "Kurt"
     var chatContent = ["Hi", "Hello", "How are you","yoyo","make a row"]
+    var youChatContent = [String]()
     let conQueue = DispatchQueue(label: "queuename", attributes: .concurrent)
 
     @IBAction func newContent(_ sender: AnyObject) {
-        self.chatContent.append("1234")
+        self.youChatContent.append("1234")
         myTableView.reloadData()
         self.moveToLastMessage()
 
@@ -71,6 +72,9 @@ extension ChatViewController: UITableViewDelegate, UITableViewDataSource {
         cell.name.text = chatName
         cell.content.text = chatContent[indexPath.row]
     
+
+        
+        
         return cell
     }
     
