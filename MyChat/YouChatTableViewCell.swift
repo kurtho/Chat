@@ -1,22 +1,25 @@
 //
-//  ChatTableViewCell.swift
+//  YouChatTableViewCell.swift
 //  MyChat
 //
-//  Created by KurtHo on 2016/9/16.
+//  Created by KurtHo on 2016/9/21.
 //  Copyright © 2016年 Kurt. All rights reserved.
 //
 
 import UIKit
 
-class ChatTableViewCell: UITableViewCell {
+class YouChatTableViewCell: UITableViewCell {
 
-    @IBOutlet weak var userIcon: UIImageView!
-    @IBOutlet weak var chatview: UIView!
-    @IBOutlet weak var name: UILabel!
-    @IBOutlet weak var content: UILabel!
+    @IBOutlet weak var uUserIcon: UIImageView!
+    @IBOutlet weak var uChatView: UIView!
+    @IBOutlet weak var uName: UILabel!
+    @IBOutlet weak var uContent: UILabel!
+
     
 
+    
 
+    
     
     
     

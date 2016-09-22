@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		293317E91D927A2100B027E6 /* YouChatTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 293317E81D927A2100B027E6 /* YouChatTableViewCell.swift */; };
 		29DDAA1E1D8BFD6F0090DE21 /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29DDAA1D1D8BFD6F0090DE21 /* ChatViewController.swift */; };
 		29DDAA201D8BFF8C0090DE21 /* ChatTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29DDAA1F1D8BFF8C0090DE21 /* ChatTableViewCell.swift */; };
 		29DDAA241D8C05D80090DE21 /* Function.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29DDAA231D8C05D80090DE21 /* Function.swift */; };
@@ -19,6 +20,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		293317E81D927A2100B027E6 /* YouChatTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YouChatTableViewCell.swift; sourceTree = "<group>"; };
 		29DDAA1D1D8BFD6F0090DE21 /* ChatViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
 		29DDAA1F1D8BFF8C0090DE21 /* ChatTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatTableViewCell.swift; sourceTree = "<group>"; };
 		29DDAA231D8C05D80090DE21 /* Function.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Function.swift; sourceTree = "<group>"; };
@@ -47,6 +49,7 @@
 			isa = PBXGroup;
 			children = (
 				29DDAA1F1D8BFF8C0090DE21 /* ChatTableViewCell.swift */,
+				293317E81D927A2100B027E6 /* YouChatTableViewCell.swift */,
 			);
 			name = cell;
 			sourceTree = "<group>";
@@ -156,6 +159,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				293317E91D927A2100B027E6 /* YouChatTableViewCell.swift in Sources */,
 				29DDAA261D8C23020090DE21 /* ViewController.swift in Sources */,
 				29DDAA201D8BFF8C0090DE21 /* ChatTableViewCell.swift in Sources */,
 				29DDAA1E1D8BFD6F0090DE21 /* ChatViewController.swift in Sources */,

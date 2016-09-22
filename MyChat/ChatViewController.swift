@@ -16,6 +16,7 @@ class ChatViewController: UIViewController {
     var chatName = "Kurt"
     var chatContent = ["Hi", "Hello", "How are you","yoyo","make a row"]
     var youChatContent = [String]()
+    
     let conQueue = DispatchQueue(label: "queuename", attributes: .concurrent)
 
     @IBAction func newContent(_ sender: AnyObject) {
@@ -42,7 +43,7 @@ class ChatViewController: UIViewController {
         
         myTableView.estimatedRowHeight = 65
         myTableView.rowHeight = UITableViewAutomaticDimension
-
+        
     }
 
     
@@ -61,22 +62,28 @@ extension ChatViewController: UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        
         return chatContent.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = myTableView.dequeueReusableCell(withIdentifier: "myCell") as! ChatTableViewCell
-        cell.chatview.layer.cornerRadius = 8
-        cell.selectionStyle = UITableViewCellSelectionStyle.none
-        cell.name.text = chatName
-        cell.content.text = chatContent[indexPath.row]
-    
-
+        if indexPath.row == 0 {
+            let cell = myTableView.dequeueReusableCell(withIdentifier: "myCell") as! ChatTableViewCell
+            cell.chatview.layer.cornerRadius = 8
+            cell.selectionStyle = UITableViewCellSelectionStyle.none
+            cell.name.text = chatName
+            cell.content.text = chatContent[indexPath.row]
+            return cell
+        }else{
         
+        let uCell = myTableView.dequeueReusableCell(withIdentifier: "uCell") as! YouChatTableViewCell
+            uCell.uName.text = "Cccc"
+            uCell.uContent.text = chatContent[indexPath.row]
         
-        return cell
+            
+            return uCell
+        }
     }
+    
     
     
     
